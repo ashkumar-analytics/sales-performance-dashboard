@@ -1,0 +1,1 @@
+Total Units = SUM(sales_fact[units_sold])
