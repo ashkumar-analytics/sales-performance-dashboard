@@ -1,0 +1,5 @@
+Average Order Value =
+DIVIDE(
+    SUM(sales_fact[revenue]),
+    COUNT(sales_fact[order_id])
+)
