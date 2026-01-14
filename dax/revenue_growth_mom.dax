@@ -1,0 +1,10 @@
+Revenue MoM Growth % =
+VAR CurrentMonth =
+    [Total Revenue]
+VAR PreviousMonth =
+    CALCULATE(
+        [Total Revenue],
+        DATEADD(sales_fact[order_date], -1, MONTH)
+    )
+RETURN
+DIVIDE(CurrentMonth - PreviousMonth, PreviousMonth)
